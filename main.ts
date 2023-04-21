@@ -5,7 +5,7 @@ let proximity = 0
 let tone = 0
 let signal = 0
 radio.setGroup(1)
-signal = 0
+signal = -128
 basic.forever(function () {
     tone = Math.map(signal, -128, -42, 131, 988)
     proximity = Math.round(Math.map(signal, -128, -42, 0, 9))
